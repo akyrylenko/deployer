@@ -1,4 +1,7 @@
 Deployer::Application.routes.draw do
+  resources :commands
+
+
   devise_for :users
 
   # The priority is based upon order of creation:
