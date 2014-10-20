@@ -1,4 +1,7 @@
 Deployer::Application.routes.draw do
+  resources :stages
+
+
   resources :commands
 
 
