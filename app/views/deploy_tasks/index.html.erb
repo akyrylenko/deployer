@@ -1,0 +1,27 @@
+<h1>Listing deploy_tasks</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Issue</th>
+    <th>Stage</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @deploy_tasks.each do |deploy_task| %>
+  <tr>
+    <td><%= deploy_task.user_id %></td>
+    <td><%= deploy_task.issue %></td>
+    <td><%= deploy_task.stage_id %></td>
+    <td><%= link_to 'Show', deploy_task %></td>
+    <td><%= link_to 'Edit', edit_deploy_task_path(deploy_task) %></td>
+    <td><%= link_to 'Destroy', deploy_task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Deploy task', new_deploy_task_path %>

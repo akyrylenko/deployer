@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @deploy_task.user_id %>
+</p>
+
+<p>
+  <b>Issue:</b>
+  <%= @deploy_task.issue %>
+</p>
+
+<p>
+  <b>Stage:</b>
+  <%= @deploy_task.stage_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_deploy_task_path(@deploy_task) %> |
+<%= link_to 'Back', deploy_tasks_path %>
