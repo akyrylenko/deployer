@@ -1,4 +1,7 @@
 Deployer::Application.routes.draw do
+  resources :repositories
+
+
   resources :deploy_tasks
 
 
